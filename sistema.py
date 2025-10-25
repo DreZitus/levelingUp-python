@@ -7,12 +7,15 @@ class atr_jogador(ABC): #classe base abstrata
         self.nome = nome
         self.nivel = nivel
         self.xp = xp
-
     
-class sistema_Niveis(ABC):
+    def quest_completa(self, xp_ganha):
+        self.xp += xp_ganha
+        self.verifica_nivel()
 
-    def __init__(self):
-        pass
+
+dados_jogador = atr_jogador('André', 0, 0)
+
+print(dados_jogador.nome, dados_jogador.nivel, dados_jogador.xp)
 
 
 
