@@ -1,3 +1,36 @@
+from abc import ABC, abstractmethod
+import math
+
+class atr_jogador(ABC): #classe base abstrata
+
+    def __init__(self, nome, nivel, xp):  
+        self.nome = nome
+        self.nivel = nivel
+        self.xp = xp
+
+    
+class sistema_Niveis(ABC):
+
+    def __init__(self):
+        pass
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 jogador = {
     'nome': 'André',
     'nivel': 0,
@@ -7,11 +40,7 @@ jogador = {
 
 nivel = 0
 xp = 1
-quest = False
+questcomplete = False
 
-if quest == True:
+if questcomplete == True:
     xp = xp * 2
-
-jogador['xp'] += xp 
-
-print(f"XP Atual: {jogador['xp']}")s
